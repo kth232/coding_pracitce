@@ -1,4 +1,4 @@
-package Test3.Card;
+package textbook.chapter06.Card;
 
 public class Card {
     private int cardNumber;

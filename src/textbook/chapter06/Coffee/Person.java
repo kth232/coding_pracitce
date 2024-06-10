@@ -1,4 +1,4 @@
-package Test3.Coffee2;
+package textbook.chapter06.Coffee;
 
 public class Person {
     String name;

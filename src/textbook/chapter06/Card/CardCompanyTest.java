@@ -1,4 +1,4 @@
-package Test3.Card;
+package textbook.chapter06.Card;
 
 public class CardCompanyTest {
     public static void main(String[] args) {

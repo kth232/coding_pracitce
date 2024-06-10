@@ -1,4 +1,4 @@
-package Test3.Card;
+package textbook.chapter06.Card;
 
 public class CardCompany {
     private static CardCompany instance; //인스턴스 자원 정의

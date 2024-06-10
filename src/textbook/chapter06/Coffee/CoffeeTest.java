@@ -1,4 +1,4 @@
-package Test3.Coffee2;
+package textbook.chapter06.Coffee;
 
 public class CoffeeTest {
     public static void main(String[] args) {

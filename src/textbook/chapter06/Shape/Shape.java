@@ -1,4 +1,4 @@
-package Test3.Shape;
+package textbook.chapter06.Shape;
 
 class Shape {
     public void draw() {
