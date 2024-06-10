@@ -10,9 +10,15 @@ public class MyDate {
 
 
     public MyDate (int day, int month, int year){ //생성자 함수
-        setDay(day); //함수를 통해 대입 값 검증
-        setMonth(month);
         setYear(year);
+        setMonth(month);
+        setDay(day); //함수를 통해 대입 값 검증
+
+        /*
+        setDay(day); //함수를 통해 대입 값 검증
+        setMonth(month); //month를 가지고 day 값을 검증하기 때문에 month보다 day가 앞에 오면 안됨
+        setYear(year);
+         */
     }
 
     public int getDay() {
@@ -20,7 +26,7 @@ public class MyDate {
     }
 
     public void setDay(int day) {
-        switch(month){
+        switch(month){// month 값을 가지고 검증하기 때문에 set 순서 중요함!
             case 1, 3, 5, 7, 8, 10, 12: //해당 월일 때 1-31일까지
                 if (day < 0 || day > 31) {
                     isValid = false;
