@@ -3,7 +3,7 @@ package textbook.chapter06.cooperation;
 public class Taxi {
     String taxiNm; // 택시 이름
     int passengerCnt; // 승객 수
-    int money; // 버스 소득
+    int money; // 택시 소득
 
     public Taxi(String taxiNm) // 택시 이름을 매개변수로 받는 생성자
     {
