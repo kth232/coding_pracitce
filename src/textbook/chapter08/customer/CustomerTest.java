@@ -1,6 +1,4 @@
-package textbook.chapter08;
-
-import java.util.concurrent.Callable;
+package textbook.chapter08.customer;
 
 public class CustomerTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package textbook.chapter08;
+package textbook.chapter08.customer;
 
 import java.util.ArrayList;
 

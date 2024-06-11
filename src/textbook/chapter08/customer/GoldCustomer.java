@@ -1,4 +1,4 @@
-package textbook.chapter08;
+package textbook.chapter08.customer;
 
 public class GoldCustomer extends Customer{ //Customer 클래스 상속
     double saleRatio; //지불금액 할인률

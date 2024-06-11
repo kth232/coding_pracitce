@@ -1,4 +1,4 @@
-package textbook.chapter08;
+package textbook.chapter08.customer;
 
 public class Customer {
     protected int customerID; //상속 관계 클래스에서 접근할 수 있게 protected 접근 제어자 사용
