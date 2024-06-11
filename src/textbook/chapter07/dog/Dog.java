@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.dog;
 
 public class Dog {
     private String name; //강아지 이름

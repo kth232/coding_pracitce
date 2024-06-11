@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.student;
 
 public class Subject {
     private String name; //과목명

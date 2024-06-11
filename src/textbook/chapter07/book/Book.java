@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.book;
 
 public class Book {
     private String bookName; //책 이름

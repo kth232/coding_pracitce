@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.dog;
 
 public class DogTestArray {
     public static void main(String[] args) {

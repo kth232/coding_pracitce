@@ -1,6 +1,4 @@
-package textbook.chapter07;
-
-import java.util.Arrays;
+package textbook.chapter07.book;
 
 public class ObjectCopy {
     public static void main(String[] args) {

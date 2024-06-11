@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.student;
 
 import java.util.ArrayList;
 

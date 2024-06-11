@@ -1,4 +1,4 @@
-package textbook.chapter07;
+package textbook.chapter07.dog;
 
 import java.util.ArrayList;
 
