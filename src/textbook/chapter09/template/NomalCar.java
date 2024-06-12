@@ -12,4 +12,9 @@ public class NomalCar extends Car{ //car 추상 클래스 상속
     public void stop() {
         System.out.println("stop with brake");
     }
+
+    @Override
+    public void light() {
+        System.out.println("turn on light");
+    }
 }

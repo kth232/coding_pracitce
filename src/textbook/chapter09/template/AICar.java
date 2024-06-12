@@ -5,11 +5,16 @@ public class AICar extends Car{ //car 추상 클래스 상속
     @Override
     public void drive() {
         System.out.println("autonomous driving");
-        System.out.println("turns on its own");
+        System.out.println("turn on its own");
     }
 
     @Override
     public void stop() {
         System.out.println("stop on its own");
+    }
+
+    @Override
+    public void light() {
+        System.out.println("turn on light its own");
     }
 }

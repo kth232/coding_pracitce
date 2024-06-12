@@ -3,6 +3,7 @@ package textbook.chapter09.template;
 public abstract class Car { //추상 클래스 정의->상속 목적
     public abstract void drive(); //추상 메서드 정의: 하위 클래스마다 다르게 구현할 메서드 선언
     public abstract void stop(); //추상 메서드 정의
+    public abstract void light(); //추상 메서드 정의 추가
     public void startCar() //구현 코드가 있는 메서드 정의: 하위 클래스도 공통으로 사용할 메서드 구현, 재정의 가능
     {
         System.out.println("start up");
@@ -17,6 +18,7 @@ public abstract class Car { //추상 클래스 정의->상속 목적
     // car가 수행할 동작 순서대로 구현, 순서는 바꿀 수 없으나 차종에 따라 구현 내용 재정의 가능
     {
         startCar();
+        light();
         drive();
         stop();
         turnOff();
