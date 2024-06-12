@@ -32,6 +32,7 @@ public class VIPCustomer extends Customer{ //Customer 클래스 상속
     @Override
     public String showCustomerInfo() { //고객 정보 호출 메서드 재정의
         //Customer의 showCustomerInfo()를 호출하여 정보를 받아옴
+        //System.out.println(super.showCustomerInfo()+ "/ 보유 쿠폰: " + coupon); ->error
         return super.showCustomerInfo() + " / 보유 쿠폰: " + coupon;
     }
 }

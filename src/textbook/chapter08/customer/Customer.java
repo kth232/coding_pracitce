@@ -30,7 +30,8 @@ public class Customer {
     public String showCustomerInfo(){ //고객 정보 출력하는 함수
         //String 타입으로 반환해야 VIPInfo()에서 출력값을 사용할 수 있음
         //void: 반환값이 없다
-        return "Customer ID: " + customerID + " / Customer Name: " + customerNM + " / Grade: " + grade + " / Point: " +point;
+        //System.out.printf("Customer ID: %d / Customer Name: %s / Grade: %s / Point: %d", customerID, customerNM, grade, point); ->error
+        return "Customer ID: " + customerID + " / Customer Name: " + customerNM + " / Grade: " + grade + " / Point: " + point;
     }
 
     public int getCustomerID() {

@@ -17,7 +17,7 @@ public class CustomerListTest {
             System.out.println(customer.showCustomerInfo()); // 메서드 오버라이딩(VIP 고객)으로 각 고객에 맞는 정보 출력
         }
 
-        System.out.println("====== 할인율과 보너스 포인트 계산 ======");
+        System.out.println("====== 할인율, 포인트 계산 ======");
         int price = 10000;
         for(Customer customer : customerList){ //customerList의 각 요소를 customer에 담아 출력 반복(향상된 for문)
             int cost = customer.calcPrice(price); //고객 등급별 금액 계산<-메서드 재정의
