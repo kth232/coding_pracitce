@@ -16,7 +16,7 @@ public class CalculatorTest {
 
         //디폴트 메서드: 인터페이스에서 완전 구현된 메서드로 클래스에서 따로 구현할 필요 없이 사용 가능
         System.out.println("===default method===");
-        calc.description(); //디폴트 메소드 호출 + private 메서드 호출 
+        calc.description(); //디폴트 메소드 호출: 실제 객체의 메서드 호출
 
         //정적 메서드: 객체 생성과 상관없이 사용 가능
         System.out.println("===static method===");

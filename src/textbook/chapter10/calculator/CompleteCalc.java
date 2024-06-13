@@ -22,7 +22,8 @@ public class CompleteCalc extends Calculator { //calculator 추상 클래스 상
 
     @Override
     public void description() {
-        super.description(); //calc 인터페이스의 description() 호출
+        System.out.println("Complete Calculator");
+        //super.description(); //calc 인터페이스의 description() 호출
     }
 
     public void showInfo(){ //추가로 정의한 메서드

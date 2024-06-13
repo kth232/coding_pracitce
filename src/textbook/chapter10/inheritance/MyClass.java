@@ -16,4 +16,13 @@ public class MyClass implements Z{
     public void z() {
         System.out.println("z()");
     }
+
+    @Override
+    public void xx() {
+        System.out.println("mm");
+    }
+
+    public void mmm() {
+        System.out.println("mmm");
+    }
 }
