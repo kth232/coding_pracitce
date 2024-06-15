@@ -101,5 +101,21 @@ public class MyDate {
                 ", month=" + month +
                 ", year=" + year +
                 ", isValid=" + isValid;
+
+    }
+    @Override
+    public boolean equals(Object obj) {
+
+        if (obj instanceof MyDate) {
+
+            MyDate date = (MyDate)obj;
+            return (this.day == date.day && this.month == date.month && this.year == date.year);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return day * 10 + month * 101 + year * 102;
     }
 }
