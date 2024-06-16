@@ -1,4 +1,6 @@
-package textbook.chapter12.collection;
+package textbook.chapter12.collection.list;
+
+import textbook.chapter12.collection.Member;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -25,17 +27,17 @@ public class MemArrayList {
             }
         }
 
-//        Iterator<Member> ir = arrayList.iterator();
-//        while(ir.hasNext()) {
-//            Member member = ir.next();
-//            int tempId = member.getMemberId();
-//            if(tempId == memberId){ // 멤버아이디가 매개변수와 일치하면
-//                arrayList.remove(member); // 해당 멤버를 삭제
-//                return "remove complete"; // true 반환
-//            }
-//        }
+        Iterator<Member> ir = arrayList.iterator(); //iterator() 호출하여 Iterator 반환
+        while(ir.hasNext()) { //요소가 있는 동안
+            Member member = ir.next(); //다음 회원 반환
+            int tempId = member.getMemberId();
+            if(tempId == memberId){ // 멤버아이디가 매개변수와 일치하면
+                arrayList.remove(member); // 해당 멤버를 삭제
+                return "remove complete"; // true 반환
+            }
+        }
 
-        System.out.println(memberId + "가 존재하지 않습니다");  //for 가 끝날때 까지 return이 안된 경우
+        System.out.println(memberId + "isn't exist");  //for 가 끝날때 까지 return이 안된 경우
         return "remove impossible";
     }
 

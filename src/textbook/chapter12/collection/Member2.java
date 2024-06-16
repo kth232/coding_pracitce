@@ -2,11 +2,11 @@ package textbook.chapter12.collection;
 
 import java.util.Comparator;
 
-public class Member implements Comparable<Member>, Comparator<Member> {
+public class Member2 implements Comparator<Member2>, Comparable<Member2> {
     private int memberId;        //회원 아이디
     private String memberNm;   //회원 이름
 
-    public Member(int memberId, String memberNm){ //생성자
+    public Member2(int memberId, String memberNm){ //생성자
         this.memberId = memberId;
         this.memberNm = memberNm;
     }
@@ -35,18 +35,17 @@ public class Member implements Comparable<Member>, Comparator<Member> {
     }
 
     @Override
-    public int compare(Member mem1, Member mem2) { //comparator 인터페이스를 사용할 때 구현해야할 메서드(전달받은 값 2개 비교)
+    public int compare(Member2 mem1, Member2 mem2) { //comparator 인터페이스를 사용할 때 구현해야할 메서드
         //전달받은 두 매개변수를 비교함, 첫번째 매개변수가 더 클 때 양수 반환=오름차순
-        return mem1.compareTo(mem2);
         //return mem1.getMemberId()-mem2.getMemberId();
-        //return (mem1.compareTo(mem2))* -1; //내림차순
+        return (mem1.compareTo(mem2))* -1; //내림차순
     }
 
     @Override
     public boolean equals(Object obj) {
-        if( obj instanceof Member){
-            Member member = (Member)obj; //ID로 구분
-            if( this.memberId == member.memberId ) //ID가 같을 경우
+        if (obj instanceof Member2) {
+            Member2 member = (Member2) obj; //ID로 구분
+            if (this.memberId == member.memberId) //ID가 같을 경우
                 return true;
             else
                 return false;
@@ -55,9 +54,7 @@ public class Member implements Comparable<Member>, Comparator<Member> {
     }
 
     @Override
-    public int compareTo(Member member) { //treeSet에서 정렬하기 위한 Comparable 인터페이스의 추상 메서드(자기 자신과 전달받은 값 비교)
-        //노드와 비교하여 작으면 왼쪽, 크면 오른쪽으로 이동
-        return (this.memberId - member.memberId);   //오름차순, 추가한 회원 ID와 매개변수로 받은 회원 ID를 비교
-        //return (this.memberId - member.memberId) *  (-1);   //내림차순, 반환값을 음수로 만듦
+    public int compareTo(Member2 member2) {
+        return (this.memberId - member2.memberId);
     }
 }

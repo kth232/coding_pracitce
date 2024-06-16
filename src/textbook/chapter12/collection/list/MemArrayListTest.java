@@ -1,6 +1,10 @@
-package textbook.chapter12.collection;
+package textbook.chapter12.collection.list;
+
+import textbook.chapter12.collection.Member;
 
 public class MemArrayListTest {
+    public static void main(String[] args) {
+
     MemArrayList MemArrayList = new MemArrayList();
 
     Member member1 = new Member(1001, "lee");
@@ -17,4 +21,5 @@ public class MemArrayListTest {
 
     MemArrayList.removeMember(member4.getMemberId());
     MemArrayList.showAllMember();
+    }
 }

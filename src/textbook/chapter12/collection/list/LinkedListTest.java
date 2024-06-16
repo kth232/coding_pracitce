@@ -1,9 +1,11 @@
-package textbook.chapter12.collection;
+package textbook.chapter12.collection.list;
 
 import java.util.LinkedList;
 
 public class LinkedListTest {
-    LinkedList<String> linkedList = new LinkedList<String>();
+	public static void main(String[] args) {
+
+    	LinkedList<String> linkedList = new LinkedList<String>();
 		
 		linkedList.add("A"); //linkedlist에 요소 추가
 		linkedList.add("B");
@@ -16,8 +18,8 @@ public class LinkedListTest {
 		
 		linkedList.addFirst("O"); //linkedlist 맨 앞에 요소 추가
 		System.out.println(linkedList);
-		System.out.println(linkedList.removeLㄴast()); //linkedlist 마지막 요소 삭제 후 해당 요소 출력
+		System.out.println(linkedList.removeLast()); //linkedlist 마지막 요소 삭제 후 해당 요소 출력
 		
 		System.out.println(linkedList);
-}
+	}
 }
