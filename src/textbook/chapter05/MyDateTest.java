@@ -16,7 +16,7 @@ public class MyDateTest {
         System.out.println(date3.isValid());
 
         MyDate date4 = new MyDate(30, 2, 2000);
-        System.out.println("date1.equals(date4)" + date1.equals(date4)); //값 비교
+        System.out.println("date1.equals(date4): " + date1.equals(date4)); //값 비교
 
         System.out.println(date1.hashCode());
         System.out.println(date4.hashCode());
