@@ -23,7 +23,7 @@ public class LibraryTest {
                 .sum();
         System.out.println("total price: " + totalPrice + "원");
 
-        System.out.println("==가격이 2만원 이상인 책의 이름(정렬o)==");
+        System.out.println("==가격이 2만원 이상인 책 이름 추출(정렬o)==");
         bookList.stream()
                 .filter(b->b.getPrice() >= 20000)
                 .map(b->b.getSubject())
