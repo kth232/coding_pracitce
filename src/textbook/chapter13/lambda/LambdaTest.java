@@ -29,17 +29,18 @@ public class LambdaTest {
         PrintStr str = s -> System.out.println(s); //람다식을 인터페이스형 변수에 대입
         str.showStr("hello lambda_1"); //람다식 구현부 호출
 
-        showStr(str); //메서드 매개변수로 람다식 대입한 변수 전달
-
-        PrintStr reStr = returnStr(); //변수로 반환받기
-        reStr.showStr("hello"); //메서드 호출
-
-        public static void showStr (PrintStr p) { //정적 메서드, 인터페이스형 매개변수 받음
-            p.showStr("hello lambda_2");
-        }
-
-        public static PrintStr returnStr() { //람다식 반환
-            return s -> System.out.println(s + " world");
-        }
+        //왜 오류가 나는 걸까..
+//        showStr(str); //메서드 매개변수로 람다식 대입한 변수 전달
+//
+//        PrintStr reStr = returnStr(); //변수로 반환받기
+//        reStr.showStr("hello"); //메서드 호출
+//
+//        public static void showStr (PrintStr p) { //정적 메서드, 인터페이스형 매개변수 받음
+//            p.showStr("hello lambda_2");
+//        }
+//
+//        public static PrintStr returnStr() { //람다식 반환
+//            return s -> System.out.println(s + " world");
+//        }
     }
 }
