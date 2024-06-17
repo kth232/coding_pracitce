@@ -2,7 +2,7 @@ package textbook.chapter12.collection;
 
 import java.util.Comparator;
 
-public class Member implements Comparable<Member>, Comparator<Member> {
+public class Member implements Comparable<Member> {
     private int memberId;        //회원 아이디
     private String memberNm;   //회원 이름
 
@@ -34,9 +34,10 @@ public class Member implements Comparable<Member>, Comparator<Member> {
         return memberId; //해시코드 값으로 ID 반환
     }
 
-    @Override
+    //@Override
     public int compare(Member mem1, Member mem2) { //comparator 인터페이스를 사용할 때 구현해야할 메서드(전달받은 값 2개 비교)
         //전달받은 두 매개변수를 비교함, 첫번째 매개변수가 더 클 때 양수 반환=오름차순
+        //인터페이스 구현체를 만들어야 함, 하지만 웬만하면 거의 사용 x, 주로 만들어져 있는 것을 사용함
         return mem1.compareTo(mem2);
         //return mem1.getMemberId()-mem2.getMemberId();
         //return (mem1.compareTo(mem2))* -1; //내림차순
