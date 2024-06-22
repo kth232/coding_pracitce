@@ -2,7 +2,7 @@ package textbook.chapter15;
 
 import java.io.IOException;
 
-public class SystemInTest {
+public class SystemInTest { //바이트 단위 표준 입출력 스트림->문자 읽기 위해 reader 보조 스트림 필요
     public static void main(String[] args) throws IOException {
 
         System.out.println("알파벳을 쓰고 [Enter]를 누르세요");

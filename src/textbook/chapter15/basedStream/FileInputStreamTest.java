@@ -1,4 +1,4 @@
-package textbook.chapter15;
+package textbook.chapter15.basedStream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
